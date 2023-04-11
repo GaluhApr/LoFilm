@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Quicksand:wght@500;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 1em;
+}
+
+body {
+    background-image: url("../images/bg.jpg");
+    background-attachment: fixed;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+main .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .content .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+    margin-bottom: 10em;
+}
+
+main .content .description .title {
+    font-size: 5rem;
+    font-weight: 700;
+    color: White;
+    text-align: center;
+    margin: 0;
+}
+
+main .content .description mark {
+    color: #BA5799;
+    background-color: transparent;
+}
+
+main .content .description p{
+    font-weight: 500;
+    color: #E3E3E3;
+    text-align: center;
+    max-width: 800px;
+}
+
+main .content .description .more {
+    text-decoration: none;
+}
+
+main .content .description .more .fa {
+    color: #BA5799;
+    transition: all .2s ease-in-out;
+    margin: 0 2rem;
+}
+
+main .content .description a {
+    background-color: transparent;
+    font-size: 1.3rem;
+    color: #E3E3E3;
+    box-shadow: 4px 4px #BA5799;
+    padding: 1.5rem;
+    transition: all .2s ease-in-out;
+    margin: 1rem;
+}
+
+main .content .description a:hover {
+    background-color: #425c77;
+    color: white;
+    padding: 1.4rem;
+}
+
+main .content .subtitle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+    color:white;
+    font-size: 1.3rem;
+}
+
+#trending {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+footer p {
+    color: #425c77;
+    font-size: 1rem;
+    margin: 0;
+}
+
+
+@media (max-width: 768px) { 
+
+    main .content .description {
+        padding: 1rem;
+    }
+
+    main .content .description .title {
+        font-size: 2rem;
+    }
+
+    main .content .description p{
+        font-size: .7rem;
+    }
+
+    main .content .description a {
+        background-color: transparent;
+        font-size: 1rem;
+        color: #E3E3E3;
+        box-shadow: 4px 4px #BA5799;
+        padding: 1.2rem;
+        transition: all .2s ease-in-out;
+        margin: 1rem;
+    }
+
+    #trending {
+        flex-direction: row;
+    }
+
+    main .content .subtitle {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #trending {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .content .subtitle {
+        font-size: .7rem;
+    }
+} 
